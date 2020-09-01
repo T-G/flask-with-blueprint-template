@@ -11,4 +11,5 @@ home = Blueprint("home", __name__, static_folder="static", template_folder="temp
 
 @home.route("/")
 def get_home():
+
     return render_template("home/home.html")

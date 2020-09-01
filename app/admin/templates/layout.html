@@ -9,14 +9,14 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ url_for('home.static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('admin.static', filename='css/style.css') }}">
   <title>{% block title %}{% endblock %}</title>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
-    <a class="navbar-brand" href="{{ url_for('home.get_home') }}"><img class="site-logo"
-        src="{{ url_for('home.static', filename='img/flasklogo.png') }}" alt="Site Logo" /></a>
+    <a class="navbar-brand" href="{{ url_for('admin.home') }}"><img class="site-logo"
+        src="{{ url_for('admin.static', filename='img/flasklogo.png') }}" alt="Site Logo" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="{{ url_for('home.get_home') }}">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{ url_for('admin.home') }}">Home <span class="sr-only">(current)</span></a>
         </li>
         
         <li class="nav-item">
@@ -76,7 +76,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="{{ url_for('home.static', filename='js/app.js') }}" charset="utf-8"></script>
+  <script src="{{ url_for('admin.static', filename='js/app.js') }}" charset="utf-8"></script>
   {% block script %}{% endblock %}
 </body>
 
